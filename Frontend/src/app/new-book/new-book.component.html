@@ -1,0 +1,64 @@
+
+
+
+<br><br>
+
+<div class='card'>
+  <form (ngSubmit)="AddBook()">
+    <div class='text-center fw-bold card-header'> New Book</div>
+      <div class='card-body'>            
+        <div class='table-responsive'>
+          <table class='table'>       
+            
+            <tbody>  
+
+              <tr>
+                <td> <label>Book Id</label></td>
+                <td><input type="Number" name="b_id" [(ngModel)]="bookItem.bookId"/></td>                  
+              </tr>   
+
+              <tr>
+                <td><label>Book Name</label></td>
+                <td><input type="text" name="b_name" [(ngModel)]="bookItem.bookName"/></td>                  
+              </tr>  
+
+              <tr>
+                <td><label>Author Name</label></td>
+                <td><input type="text" name="b_code" [(ngModel)]="bookItem.bookCode"/></td>                  
+              </tr>  
+
+              <tr>
+                <td><label>Publishing Date</label></td>
+                <td><input type="text" name="b_date" [(ngModel)]="bookItem.releaseDate"/></td>                  
+              </tr>  
+              
+              <tr>
+                <td><label>Book Description</label></td>
+                <td><input type="text" name="b_description" [(ngModel)]="bookItem.description"/></td>   
+                </tr>
+
+              <tr>
+                <td> <label>Price</label></td>
+                <td><input type="Number" name="b_price" [(ngModel)]="bookItem.price"/></td>                  
+              </tr>  
+
+              <tr>
+                <td> <label>Rating</label></td>
+                <td><input type="Number" name="b_rating" [(ngModel)]="bookItem.starRating"/></td>                  
+              </tr>  
+
+              <tr>
+                <td><label>imageUrl</label></td>
+                <td><input type="text" name="b_imageUrl" [(ngModel)]="bookItem.imageUrl"/></td>                              
+              <tr>
+                <td></td>
+                <td><input type="button" class="btn btn-success"  (click)="AddBook()" value="Submit" /></td>                  
+              </tr>   
+                          
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+  </form>
+</div>
